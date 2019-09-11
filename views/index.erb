@@ -1,0 +1,14 @@
+<h2>Jason's Calculator</h2>
+<p>
+  <%= sprintf('今日は%s年%s月%s日です', @today.year, @today.month, @today.day) %>
+</p>
+<div>
+  <form method="post" action="/result">
+  <input required type="integer" name="number" maxlength="3" pattern="^\d+$">
+  <input type="submit" value="計算する1">
+</div>
+
+<div>
+  <button type=“button” onclick="location.href='/result'">計算する2</button>
+</div>
+
