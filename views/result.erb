@@ -1,11 +1,13 @@
 <div>
-  <% until @user_num == @count do %>
-    <% until @today.wday == 5 && @today.mday == 13 %>
+  <% until @user_num.to_i == @count do %>
+    <% until @today.mday == 13 && @today.friday? %>
       <% @today += 1 %>
     <% end %>
     <% @count += 1 %>
-    <% break if @user_num == @count %>
+    <% break @user_num.to_i == @count %>
     <% @today += 1 %>
   <% end %>
+</div>
+<div>
   <h2>結果は<%= @today %>です</h2>
 </div>
