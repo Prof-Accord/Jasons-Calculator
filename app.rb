@@ -12,6 +12,7 @@ post '/result' do
   @title = "Result"
   @today = Date.today
   @user_num = params[:number]
+  @user_num += 1
   erb :result
 end
 
