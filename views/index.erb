@@ -1,7 +1,12 @@
-<h2>Jason's Calculator</h2>
+<h1>Jason's Calculator</h1>
 <p>
   <%= sprintf('今日は%s年%s月%s日です', @today.year, @today.month, @today.day) %>
 </p>
+<h3>
+  <% if @today.mday == 13 && @today.friday? %>
+    <%= '13日の金曜日です！'%>
+  <% end %>
+</h3>
 <div>
   <form method="post" action="/result">
   <input required type="text" name="number" maxlength="3" pattern="^\d+$">

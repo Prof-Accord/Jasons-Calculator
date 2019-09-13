@@ -1,15 +1,19 @@
 body {
-  font-size: 16px;
+  font-size: 20px;
   font-family: Verdana, sans-serif;
 }
 
 .container {
-  width: 400px;
-  margin: 20px auto;
+  width: 450px;
+  margin: 50px auto;
 }
 
-h2 {
-  font-size: 18px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+h1 {
+  font-size: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 50px;
+}
+
+h3 {
+  color: red;
 }

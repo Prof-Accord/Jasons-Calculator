@@ -15,9 +15,3 @@ post '/result' do
   @user_num = params[:number]
   erb :result
 end
-
-# post '/result' do
-#   @title = "Result"
-#   # end
-#   erb:result
-# end
