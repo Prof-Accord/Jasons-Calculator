@@ -4,11 +4,12 @@
 </p>
 <h3>
   <% if @today.mday == 13 && @today.friday? %>
-    <%= '13日の金曜日です！'%>
+    <%= '今日は13日の金曜日です！'%>
   <% end %>
 </h3>
 <p>
-  3桁までの半角数字を入力してください。13日の金曜日がいつかを計算します。
+  3桁までの半角数字を入力してください。
+  13日の金曜日がいつかを計算します。
 <div>
   <form method="post" action="/result">
   <input required type="text" name="number" maxlength="3" pattern="^\d+$">

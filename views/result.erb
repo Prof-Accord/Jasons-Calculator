@@ -4,7 +4,7 @@
     <% @today += 1 %>
   <% end %>
   <% @count += 1 %>
-  <% break @user_num.to_i == @count %>
+  <% break if @user_num == @count%>
   <% @today += 1 %>
 <% end %>
 <p>
